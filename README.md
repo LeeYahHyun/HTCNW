@@ -1,4 +1,4 @@
 #Push to Github
-git add .\n
-git commit -m "nop bai tap"\n
+git add .<br>
+git commit -m "nop bai tap"<br>
 git push origin main
