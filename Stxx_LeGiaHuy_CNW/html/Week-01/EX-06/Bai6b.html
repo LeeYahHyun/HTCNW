@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jackson Electronics - Registration Form</title>
+    <style>
+      body {
+        background-color: #a9cbe8;
+        font-family: "Times New Roman", Times, serif;
+        display: flex;
+        justify-content: center;
+        padding: 30px 10px;
+        margin: 0;
+      }
+
+      .page {
+        width: 620px;
+      }
+
+      /* Logo banner */
+      .logo-banner {
+        background: linear-gradient(to bottom, #7ff0e6, #3fd0c4);
+        border: 2px solid #000;
+        border-radius: 10px;
+        width: 320px;
+        margin: 0 auto 20px auto;
+        padding: 6px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .logo-banner .bolt {
+        font-size: 34px;
+        color: #1a1aff;
+        line-height: 1;
+      }
+
+      .logo-banner .logo-text {
+        font-size: 26px;
+        font-weight: bold;
+        color: #000;
+        line-height: 1.05;
+        border-bottom: 2px solid #000;
+        text-align: left;
+      }
+
+      h1.title {
+        text-align: center;
+        font-size: 22px;
+        margin: 10px 0 4px 0;
+      }
+
+      p.subtitle {
+        text-align: center;
+        font-size: 13px;
+        margin: 0 0 12px 0;
+      }
+
+      .form-section {
+        padding: 0 10px;
+      }
+
+      .field-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 6px;
+        font-size: 13px;
+      }
+
+      .field-label {
+        width: 90px;
+        flex-shrink: 0;
+      }
+
+      .field-label.wide {
+        width: 150px;
+      }
+
+      input[type="text"] {
+        border: 1px solid #888;
+        background: #fff;
+        font-family: inherit;
+        font-size: 13px;
+        padding: 2px 4px;
+      }
+
+      .name-row input:first-of-type {
+        width: 220px;
+        margin-right: 10px;
+      }
+
+      .last-name-label {
+        margin-right: 6px;
+      }
+
+      .name-row input:last-of-type {
+        width: 130px;
+      }
+
+      .address-input {
+        width: 380px;
+      }
+
+      .city-row .city-input {
+        width: 220px;
+        margin-right: 10px;
+      }
+
+      .city-row .state-label,
+      .city-row .zip-label {
+        margin-right: 6px;
+      }
+
+      .city-row .state-input {
+        width: 40px;
+        margin-right: 10px;
+      }
+
+      .city-row .zip-input {
+        width: 60px;
+      }
+
+      .country-input {
+        width: 150px;
+      }
+
+      select {
+        font-family: inherit;
+        font-size: 13px;
+        padding: 1px 2px;
+        width: 140px;
+      }
+
+      .divider {
+        border: none;
+        border-top: 1px solid #444;
+        margin: 14px 0;
+      }
+
+      .used-for-options {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        row-gap: 4px;
+      }
+
+      .used-for-options label {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .system-row {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 6px;
+        font-size: 13px;
+      }
+
+      .system-options {
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        row-gap: 4px;
+      }
+
+      .system-options label {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .comments-row {
+        align-items: flex-start;
+      }
+
+      textarea {
+        width: 500px;
+        height: 90px;
+        border: 1px solid #888;
+        font-family: inherit;
+        font-size: 13px;
+        resize: none;
+      }
+
+      .buttons {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .buttons button {
+        font-family: inherit;
+        font-size: 13px;
+        padding: 3px 10px;
+        margin: 0 5px;
+        background: #e8e8e8;
+        border: 1px solid #888;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="logo-banner">
+        <span class="bolt">⚡</span>
+        <div class="logo-text">Jackson<br />Electronics</div>
+      </div>
+
+      <h1 class="title">Registration Form</h1>
+      <p class="subtitle">Register your Jackson Electronics product here</p>
+
+      <div class="form-section">
+        <div class="field-row name-row">
+          <span class="field-label">First Name:</span>
+          <input type="text" />
+          <span class="last-name-label">Last Name:</span>
+          <input type="text" />
+        </div>
+
+        <div class="field-row">
+          <span class="field-label">Address #1:</span>
+          <input type="text" class="address-input" />
+        </div>
+
+        <div class="field-row">
+          <span class="field-label">Address #2:</span>
+          <input type="text" class="address-input" />
+        </div>
+
+        <div class="field-row city-row">
+          <span class="field-label">City:</span>
+          <input type="text" class="city-input" />
+          <span class="state-label">State:</span>
+          <input type="text" class="state-input" />
+          <span class="zip-label">Zip:</span>
+          <input type="text" class="zip-input" />
+        </div>
+
+        <div class="field-row">
+          <span class="field-label">Country:</span>
+          <input type="text" class="country-input" value="United States" />
+        </div>
+
+        <hr class="divider" />
+
+        <div class="field-row">
+          <span class="field-label">Product:</span>
+          <select>
+            <option>ScanMaster</option>
+            <option>PrintMaster</option>
+            <option>FaxMaster</option>
+          </select>
+        </div>
+
+        <div class="field-row">
+          <span class="field-label">Date Purchased:</span>
+          <input type="text" class="address-input" style="width: 150px" />
+        </div>
+
+        <div class="field-row">
+          <span class="field-label">Serial #:</span>
+          <input type="text" class="address-input" style="width: 150px" />
+        </div>
+
+        <div class="field-row" style="align-items: flex-start">
+          <span class="field-label">Used for:</span>
+          <div class="used-for-options">
+            <label><input type="radio" name="usedfor" /> Home</label>
+            <label
+              ><input type="radio" name="usedfor" /> Educational
+              Institution</label
+            >
+            <label
+              ><input type="radio" name="usedfor" checked /> Business</label
+            >
+            <label><input type="radio" name="usedfor" /> Other</label>
+            <label><input type="radio" name="usedfor" /> Government</label>
+          </div>
+        </div>
+
+        <div class="system-row">
+          <span class="field-label wide">System (check all that apply):</span>
+          <div class="system-options">
+            <label><input type="checkbox" /> Windows</label>
+            <label><input type="checkbox" /> UNIX</label>
+            <label><input type="checkbox" /> Macintosh</label>
+            <label><input type="checkbox" /> Other</label>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="field-row comments-row">
+          <span class="field-label">Comments?:</span>
+          <textarea></textarea>
+        </div>
+
+        <div class="buttons">
+          <button type="button">Click to register</button>
+          <button type="button">Click to cancel</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

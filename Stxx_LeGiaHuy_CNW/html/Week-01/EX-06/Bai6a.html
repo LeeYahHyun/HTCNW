@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 300px;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 30px;
+        border: 2px solid #008888;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      form {
+        width: 800px;
+        margin: 0 auto;
+        padding: 10px;
+        border: 2px solid #008888;
+        border-radius: 15px;
+        background-color: #90C5FF;
+      }
+      hr {
+        border: 1px solid #1703035a;
+        margin: 20px 0;
+      }
+      h1{
+        text-align: center;
+      }
+      p{
+        text-align: center;
+      }
+      .div01{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>  
+      <form action=" Registration Form">
+        <img src="/HTCNW/Stxx_LeGiaHuy_CNW/img/Tuan1/Bai6/Screenshot 2026-08-19 232654.png" alt="">
+      <h1 id="h1" class="h1">Registration Form</h1>
+      <p>Register your Jackson Electronics product here</p>
+        <div id="div01" class="01">
+          <label for="firstname">First Name: </label>
+          <input type="text" id="firstname" name="firstname" />
+          <label for="lastname">Last Name: </label>
+          <input type="text" id="lastname" name="lastname" />
+        </div>
+        <div id="02" class="02">
+          <label for="address1">Address #1: </label>
+          <input type="text" id="address1" name="address1" />
+        </div>
+        <div id="03" class="03">
+          <label for="address2">Address #2: </label>
+          <input type="text" id="address2" name="address2" />
+        </div>
+        <div id="04" class="04">
+          <label for="city">City: </label>
+          <input type="text" id="city" name="city" />
+          <label for="state">State</label>
+          <input type="text" id="state" name="state" />
+          <label for="zip">Zip Code: </label>
+          <input type="text" id="zip" name="zip" />
+        </div>
+        <div id="05" class="05">
+          <label for="country">Country: </label>
+          <input
+            type="text"
+            id="country"
+            name="country"
+            value="United States"
+          />
+        </div>
+        <hr />
+        <div id="06" class="06">
+          <label for="product">Product: </label>
+          <input list="products" id="product" name="product" />
+          <datalist id="products">
+            <option value="ScanMaster " />
+            <option value="Immersion UT Systems" />
+            <option value="Gantry Systems" />
+            <option value="Spot Weld Testing" />
+          </datalist>
+        </div>
+        <div id="07" class="07">
+          <label for="date">Date of Purchase: </label>
+          <input type="text" id="date" name="date" />
+        </div>
+        <div id="08" class="08">
+          <label for="serial">Serial #: </label>
+          <input type="text" id="serial" name="serial" />
+        </div>
+        <div id="09" class="09">
+          <label for="usedfor">Used for: </label>
+          <div>
+            <input type="radio" name="used" id="id" value="Home" />
+            <label for="home">Home</label>
+
+            <input type="radio" name="used" id="id" value="Education" />
+            <label for="education">Education</label>
+            <br />
+            <input type="radio" name="business" id="business" />
+            <label for="business">Business</label>
+
+            <input type="radio" name="used" id="id" value="Other" />
+            <label for="other">Other</label>
+            <br />
+            <input type="radio" name="used" id="id" value="Govement" />
+            <label for="govement">Govement</label>
+          </div>
+        </div>
+        <div id="10" class="10">
+          <label for="sys">System (check all that apply):</label>
+          <div>
+            <input type="checkbox"/>
+            <label for="windows">Windows</label>
+
+            <input type="checkbox" />
+            <label for="UNIX">UNIX</label>
+            <br />
+            <input type="checkbox"/>
+            <label for="Macintosh">Business</label>
+
+            <input type="checkbox" />
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <hr>
+        <div id="11" class="11">
+          <label for="comments">Comments: </label>
+          <input type="text" id="comments" name="comments" />
+          <div>
+            <input type="button" value="Click to register">
+            <input type="button" value="Click to cancel">
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html
