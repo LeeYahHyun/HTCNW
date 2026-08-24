@@ -1,305 +1,171 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Jackson Electronics - Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us Form</title>
     <style>
+      /* Tổng thể phông chữ và căn lề toàn trang */
       body {
-        background-color: #a9cbe8;
-        font-family: "Times New Roman", Times, serif;
-        display: flex;
-        justify-content: center;
-        padding: 30px 10px;
-        margin: 0;
-      }
-
-      .page {
-        width: 620px;
-      }
-
-      /* Logo banner */
-      .logo-banner {
-        background: linear-gradient(to bottom, #7ff0e6, #3fd0c4);
-        border: 2px solid #000;
-        border-radius: 10px;
-        width: 320px;
-        margin: 0 auto 20px auto;
-        padding: 6px 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-      }
-
-      .logo-banner .bolt {
-        font-size: 34px;
-        color: #1a1aff;
-        line-height: 1;
-      }
-
-      .logo-banner .logo-text {
-        font-size: 26px;
-        font-weight: bold;
+        font-family: Arial, sans-serif;
+        margin: 20px;
         color: #000;
-        line-height: 1.05;
-        border-bottom: 2px solid #000;
-        text-align: left;
       }
 
-      h1.title {
-        text-align: center;
-        font-size: 22px;
-        margin: 10px 0 4px 0;
+      /* Khung viền ngoài cùng bao bọc toàn bộ bài viết/form */
+      .contact-container {
+        border: 1px solid #a0b3d6; /* Đường viền xanh nhạt bên ngoài */
+        padding: 0 15px 15px 15px;
+        max-width: 600px; /* Giới hạn độ rộng form vừa mắt */
       }
 
-      p.subtitle {
-        text-align: center;
-        font-size: 13px;
-        margin: 0 0 12px 0;
+      h1 {
+        font-size: 28px;
+        margin-top: 10px;
+        margin-bottom: 15px;
       }
 
-      .form-section {
-        padding: 0 10px;
+      /* Định dạng cho các nhóm trường (fieldset) */
+      fieldset {
+        border: 1px solid #7f7f7f;
+        padding: 15px;
+        margin-bottom: 15px;
       }
 
-      .field-row {
+      legend {
+        font-size: 14px;
+        padding: 0 5px;
+      }
+
+      /* TẠO LAYOUT HÀNG NGANG BẰNG FLEXBOX */
+      .form-row {
+        display: flex;
+        margin-bottom: 10px;
+      }
+
+      /* Đối với các hàng có ô nhập liệu ngắn hoặc bình thường */
+      .form-row-align {
         display: flex;
         align-items: center;
-        margin-bottom: 6px;
-        font-size: 13px;
+        margin-bottom: 10px;
       }
 
-      .field-label {
-        width: 90px;
+      /* Ép nhãn chữ bên trái có độ rộng cố định để thẳng hàng */
+      .form-row-align label,
+      .form-row label.label-left {
+        width: 150px;
         flex-shrink: 0;
       }
 
-      .field-label.wide {
-        width: 150px;
-      }
-
-      input[type="text"] {
-        border: 1px solid #888;
-        background: #fff;
-        font-family: inherit;
-        font-size: 13px;
+      /* Định dạng kích thước cố định cho các ô text và textarea */
+      .input-text,
+      .input-textarea {
+        width: 220px;
+        box-sizing: border-box;
+        border: 1px solid #7f7f7f;
         padding: 2px 4px;
       }
 
-      .name-row input:first-of-type {
-        width: 220px;
-        margin-right: 10px;
+      /* Chỉnh riêng độ rộng cho khung Textarea to ra theo hình */
+      .input-textarea {
+        width: 400px;
+        height: 150px;
+        resize: none; /* Khóa không cho kéo giãn lung tung */
       }
 
-      .last-name-label {
-        margin-right: 6px;
-      }
-
-      .name-row input:last-of-type {
-        width: 130px;
-      }
-
-      .address-input {
-        width: 380px;
-      }
-
-      .city-row .city-input {
-        width: 220px;
-        margin-right: 10px;
-      }
-
-      .city-row .state-label,
-      .city-row .zip-label {
-        margin-right: 6px;
-      }
-
-      .city-row .state-input {
-        width: 40px;
-        margin-right: 10px;
-      }
-
-      .city-row .zip-input {
-        width: 60px;
-      }
-
-      .country-input {
-        width: 150px;
-      }
-
-      select {
-        font-family: inherit;
-        font-size: 13px;
-        padding: 1px 2px;
-        width: 140px;
-      }
-
-      .divider {
-        border: none;
-        border-top: 1px solid #444;
-        margin: 14px 0;
-      }
-
-      .used-for-options {
-        display: grid;
-        grid-template-columns: 150px 1fr;
-        row-gap: 4px;
-      }
-
-      .used-for-options label {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-      }
-
-      .system-row {
+      /* Định dạng cho hàng chứa ô Checkbox */
+      .checkbox-group {
         display: flex;
         align-items: flex-start;
-        margin-bottom: 6px;
-        font-size: 13px;
       }
 
-      .system-options {
-        display: grid;
-        grid-template-columns: 130px 1fr;
-        row-gap: 4px;
-      }
-
-      .system-options label {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-      }
-
-      .comments-row {
+      .checkbox-label {
+        display: inline-flex;
         align-items: flex-start;
-      }
-
-      textarea {
-        width: 500px;
-        height: 90px;
-        border: 1px solid #888;
-        font-family: inherit;
-        font-size: 13px;
-        resize: none;
-      }
-
-      .buttons {
-        text-align: center;
-        margin-top: 20px;
-      }
-
-      .buttons button {
-        font-family: inherit;
-        font-size: 13px;
-        padding: 3px 10px;
-        margin: 0 5px;
-        background: #e8e8e8;
-        border: 1px solid #888;
+        gap: 6px;
         cursor: pointer;
+      }
+
+      .checkbox-label input {
+        margin: 3px 0 0 0;
+      }
+
+      /* Kiểu dáng nút bấm gửi tin nhắn */
+      .btn-submit {
+        background-color: #f0f0f0;
+        border: 1px solid #7f7f7f;
+        padding: 2px 8px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      .btn-submit:hover {
+        background-color: #e5e5e5;
       }
     </style>
   </head>
   <body>
-    <div class="page">
-      <div class="logo-banner">
-        <span class="bolt">⚡</span>
-        <div class="logo-text">Jackson<br />Electronics</div>
-      </div>
+    <article class="contact-container">
+      <form action="" method="post">
+        <h1>Contact Us</h1>
 
-      <h1 class="title">Registration Form</h1>
-      <p class="subtitle">Register your Jackson Electronics product here</p>
+        <fieldset>
+          <legend>Your message:</legend>
 
-      <div class="form-section">
-        <div class="field-row name-row">
-          <span class="field-label">First Name:</span>
-          <input type="text" />
-          <span class="last-name-label">Last Name:</span>
-          <input type="text" />
-        </div>
-
-        <div class="field-row">
-          <span class="field-label">Address #1:</span>
-          <input type="text" class="address-input" />
-        </div>
-
-        <div class="field-row">
-          <span class="field-label">Address #2:</span>
-          <input type="text" class="address-input" />
-        </div>
-
-        <div class="field-row city-row">
-          <span class="field-label">City:</span>
-          <input type="text" class="city-input" />
-          <span class="state-label">State:</span>
-          <input type="text" class="state-input" />
-          <span class="zip-label">Zip:</span>
-          <input type="text" class="zip-input" />
-        </div>
-
-        <div class="field-row">
-          <span class="field-label">Country:</span>
-          <input type="text" class="country-input" value="United States" />
-        </div>
-
-        <hr class="divider" />
-
-        <div class="field-row">
-          <span class="field-label">Product:</span>
-          <select>
-            <option>ScanMaster</option>
-            <option>PrintMaster</option>
-            <option>FaxMaster</option>
-          </select>
-        </div>
-
-        <div class="field-row">
-          <span class="field-label">Date Purchased:</span>
-          <input type="text" class="address-input" style="width: 150px" />
-        </div>
-
-        <div class="field-row">
-          <span class="field-label">Serial #:</span>
-          <input type="text" class="address-input" style="width: 150px" />
-        </div>
-
-        <div class="field-row" style="align-items: flex-start">
-          <span class="field-label">Used for:</span>
-          <div class="used-for-options">
-            <label><input type="radio" name="usedfor" /> Home</label>
-            <label
-              ><input type="radio" name="usedfor" /> Educational
-              Institution</label
-            >
-            <label
-              ><input type="radio" name="usedfor" checked /> Business</label
-            >
-            <label><input type="radio" name="usedfor" /> Other</label>
-            <label><input type="radio" name="usedfor" /> Government</label>
+          <div class="form-row-align">
+            <label for="to">To</label>
+            <input
+              type="text"
+              id="to"
+              value="Example Cafe"
+              class="input-text"
+            />
           </div>
-        </div>
 
-        <div class="system-row">
-          <span class="field-label wide">System (check all that apply):</span>
-          <div class="system-options">
-            <label><input type="checkbox" /> Windows</label>
-            <label><input type="checkbox" /> UNIX</label>
-            <label><input type="checkbox" /> Macintosh</label>
-            <label><input type="checkbox" /> Other</label>
+          <div class="form-row-align">
+            <label for="email">Your email</label>
+            <input type="text" id="email" class="input-text" />
           </div>
-        </div>
 
-        <hr class="divider" />
+          <div class="form-row">
+            <label for="message" class="label-left">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              class="input-textarea"
+            ></textarea>
+          </div>
 
-        <div class="field-row comments-row">
-          <span class="field-label">Comments?:</span>
-          <textarea></textarea>
-        </div>
+          <div class="form-row-align">
+            <label for="file">Attach File</label>
+            <input type="file" id="file" />
+          </div>
+        </fieldset>
 
-        <div class="buttons">
-          <button type="button">Click to register</button>
-          <button type="button">Click to cancel</button>
-        </div>
-      </div>
-    </div>
+        <fieldset>
+          <legend>How you found us:</legend>
+
+          <div class="form-row-align">
+            <label for="hear">How did you hear of us</label>
+            <select id="hear" name="hear" class="input-text">
+              <option value="google">Google</option>
+              <option value="facebook">Facebook</option>
+              <option value="tiktok">Tiktok</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-row checkbox-group">
+            <span class="label-left">Newsletter</span>
+            <label class="checkbox-label">
+              <input type="checkbox" name="newsletter" value="yes" checked />
+              Ensure this box is checked if you would like to receive email
+              updates
+            </label>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn-submit">Send message</button>
+      </form>
+    </article>
   </body>
 </html>
