@@ -4,57 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="/HTCNW/Stxx_LeGiaHuy_CNW/html/Week-02/EX-01/Bai1.css"
+    />
   </head>
-
   <body>
-    <!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-      </head>
-
-      <body>
-        <h1>Example Cafe Menu</h1>
-        <div id="example">
-          <a href="">Starters | </a>
-          <a href="">Main Couress</a>
-          <a href=""> | Desserts</a>
+    <header>
+      <h1>Example Cafe Menu</h1>
+    </header>
+    <nav>
+      <a href="" id="home">🏠︎</a>
+      <a href="">Starters</a>
+      <a href="">Main Couress</a>
+      <a href="">Desserts</a>
+      <input type="search" id="search" />
+      <label for="search">Go</label>
+    </nav>
+    <section>
+      <div id="starters">
+        <h2>Starters</h2>
+        <ul>
+          <li>Chestnut and Mushroom Goujons <a href="">(y)</a></li>
+          <li>Goat Cheese Salad <a href="">(y)</a></li>
+          <li id="Kebabs">Honey Soy Chicken Kebabs <a href="">(y)</a></li>
+          <li>Seafood Salad <a href="">(y)</a></li>
+        </ul>
+        <a href="">Back top top</a>
+      </div>
+      <div id="main">
+        <h2>Main courses</h2>
+        <ul>
+          <li>Spinach and Ricotta Roulade <a href="">(y)</a></li>
+          <li>
+            Beef Tournados with Mustrard and Dill Sauce <a href="">(y)</a>
+          </li>
+          <li>Roast Chicken Salad <a href="">(y)</a></li>
+          <li>icelandic Cod with Parsley Sauce</li>
+          <li>Mushroom Wellington</li>
+        </ul>
+        <a href="">Back to top</a>
+      </div>
+      <div id="deserts">
+        <h2>Deserts</h2>
+        <ul>
+          <li>Lemon Sorbet <a href="">(y)</a></li>
+          <li>Chocolate Mud <a href="">(y)</a></li>
+          <li>Pecan Pie <a href="">(y)</a></li>
+          <li>Selection of Fine Cheeses from Around the World</li>
+        </ul>
+        <a href="">Back to top</a>
+      </div>
+      <div>
+        <h2>INFORMATION</h2>
+        <div>
+          <input type="text" placeholder="First Name" >
+          <input type="text" placeholder="Last Name">
         </div>
-        <div id="starters">
-          <h1>Starters</h1>
-          <ul>
-            <li>Chestnut and Mushroom Goujons (<u>v</u>)</li>
-            <li>Goat Cheese Salad (<u>v</u>)</li>
-            <li>Honey Soy Chicken Kebabs</li>
-            <li>Seafood Salad</li>
-          </ul>
-          <a href="">Back top top</a>
+        <div>
+          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Telephone">
         </div>
-        <div id="main">
-          <h1>Main courses</h1>
-          <ul>
-            <li>Spinach and Ricotta Roulade(<u>v</u>)</li>
-            <li>Beef Tournados with Mustrard and Dill Sauce</li>
-            <li>Roast Chicken Salad</li>
-            <li>icelandic Cod with Parsley Sauce</li>
-            <li>Mushroom Wellington (<u>v</u>)</li>
-          </ul>
-          <a href="">Back to top</a>
+        <div>
+          <datalist id ="countries">
+            <option value="USA">USA</option>
+            <option value="Spain">Spain</option>
+            <option value="UK">UK</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+          </datalist>
+          <div>
+          <input list="countries" placeholder="Country">
+          <input type="radio" id="vn" name="nationality">
+          <label for="vn">Vietnammese </label>
+          <input type="radio">
+          <label for="Foreigner">Foreigner</label>
+          </div>
+          <div>
+            <input type="hidden">
+          </div>
         </div>
-        <div id="deserts">
-          <h1>Deserts</h1>
-          <ul>
-            <li>Lemon Sorbet(<u>v</u>)</li>
-            <li>Chocolate Mud(<u>v</u>)</li>
-            <li>Pecan Pie(<u>v</u>)</li>
-            <li>Selection of Fine Cheeses from Around the World</li>
-          </ul>
-          <a href="">Back to top</a>
-        </div>
-        <p>Items marked with a (v) are suitable for vegetarians.</p>
-      </body>
-    </html>
+    </section>
+    <hr />
+    <footer>
+      <p>Items marked with a (v) are suitable for vegetarians.</p>
+    </footer>
   </body>
 </html>

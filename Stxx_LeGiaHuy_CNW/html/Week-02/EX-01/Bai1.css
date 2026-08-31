@@ -1,0 +1,50 @@
+h2 {
+  background-color: blanchedalmond;
+}
+
+h1,
+h2 {
+  color: rgb(143, 24, 24);
+}
+nav label {
+  background-color: rgb(204, 201, 201);
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin-right: 50px;
+  border-right: 1px solid rgb(129, 6, 129);
+  font-weight: bold;
+  /* Thêm padding để chữ không dính sát vào đường kẻ */
+  justify-content: center;
+  height: 50px;
+}
+
+nav {
+  background-color: rgb(224, 134, 134);
+  text-align: center;
+  height: 40px;
+}
+
+section a,
+#starters ul li a,
+section a,
+#main ul li a,
+section a,
+#deserts ul li a,
+footer p a {
+  color: red;
+}
+
+section #starters ul #Kebabs {
+  color: chocolate;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px 6px rgb(224, 58, 46);
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
