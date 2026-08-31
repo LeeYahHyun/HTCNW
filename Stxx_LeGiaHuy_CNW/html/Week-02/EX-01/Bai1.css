@@ -48,3 +48,220 @@ h1 {
   font-style: italic;
   font-family: "Times New Roman", Times, serif;
 }
+footer {
+  background-color: rgb(224, 134, 134);
+  text-align: center;
+  height: 40px;
+}
+section {
+  display: flex;
+  width: 100%;
+}
+#left_menu {
+  width: 20%;
+}
+#left_menu ul li {
+  width: 250px;
+  text-align: left;
+  background-color: rgb(224, 134, 134);
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+#left_menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+#main {
+  width: 50%;
+}
+#main #starters h2 {
+  text-align: center; /* chữ nằm giữa trong thẻ */
+  width: 60%; /* thu ngắn chiều rộng của thẻ h2 lại */
+  margin: 20px auto; /* margin auto 2 bên -> tự canh giữa cả khối */
+  background-color: #e69999; /* giữ màu nền hồng như cũ */
+  padding: 8px 0;
+}
+#main #deserts h2 {
+  text-align: center; /* chữ nằm giữa trong thẻ */
+  width: 60%; /* thu ngắn chiều rộng của thẻ h2 lại */
+  margin: 20px auto; /* margin auto 2 bên -> tự canh giữa cả khối */
+  background-color: #e69999; /* giữ màu nền hồng như cũ */
+  padding: 8px 0;
+}
+#main #info h2 {
+  text-align: center; /* chữ nằm giữa trong thẻ */
+  width: 60%; /* thu ngắn chiều rộng của thẻ h2 lại */
+  margin: 20px auto; /* margin auto 2 bên -> tự canh giữa cả khối */
+  background-color: #e69999; /* giữ màu nền hồng như cũ */
+  padding: 8px 0;
+}
+#left_menu #company {
+  display: block;
+  margin: 20px auto; /* canh giữa theo chiều ngang */
+  width: 225px;
+  height: 150px;
+  border-radius: 50%; /* tạo hình elip/tròn */
+  object-fit: cover; /* ảnh không bị méo */
+  box-shadow: 0 4px 12px rgb(224, 134, 134); /* đổ bóng màu đen */
+}
+
+#right-events {
+  width: 30%;
+  background-color: black;
+}
+#div_meeting1 {
+}
+#div_meeting1 p {
+  color: white;
+}
+#div_meeting2 {
+}
+#div_meeting2 p {
+  color: white;
+}
+#info {
+  margin-top: 20px;
+}
+
+#info h2 {
+  text-align: center;
+  background-color: #e69999;
+  color: #7a1f1f;
+  letter-spacing: 12px;
+  padding: 10px 0;
+  margin: 0 0 20px 0;
+  font-size: 20px;
+}
+
+#info form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Áp dụng cho div hàng 1 (First/Last Name) và hàng 2 (Email/Telephone) */
+#info form > div:nth-child(1),
+#info form > div:nth-child(2) {
+  display: flex;
+  gap: 15px;
+}
+
+#info form > div:nth-child(1) input,
+#info form > div:nth-child(2) input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Hàng 3: Country + 2 radio + label */
+#info form > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#info form > div:nth-child(3) input[list] {
+  flex: 1;
+  max-width: 250px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#info form > div:nth-child(3) input[type="radio"] {
+  margin-left: 15px;
+  accent-color: #c0392b;
+}
+
+#info form > div:nth-child(3) label {
+  font-size: 14px;
+}
+
+/* Hàng 4: textarea */
+#info form > div:nth-child(4) {
+  display: flex;
+}
+
+#info textarea {
+  width: 100%;
+  height: 90px;
+  resize: vertical;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Hàng 5: nút Submit/Cancel */
+#info form > div:nth-child(5) {
+  display: flex;
+  gap: 10px;
+}
+
+#info button {
+  padding: 6px 20px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#info button:hover {
+  background-color: #e0e0e0;
+}
+
+#info input:focus,
+#info textarea:focus {
+  border-color: #d67a7a;
+}
+#right-events {
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+}
+
+#right-events h2 {
+  background-color: #f5d9b0;
+  color: #7a1f1f;
+  padding: 8px 15px;
+  margin: -15px -15px 15px -15px;
+  font-size: 20px;
+}
+
+#div_meeting1,
+#div_meeting2 {
+  margin-bottom: 25px;
+}
+
+#right-events h3 {
+  color: #fff;
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+#right-events img,
+#meeting {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#right-events p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}

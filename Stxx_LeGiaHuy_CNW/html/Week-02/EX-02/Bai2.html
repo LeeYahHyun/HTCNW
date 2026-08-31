@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoko's Kitchen - Bai 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Georgia, "Times New Roman", serif;
+        background-color: #f2f2f2;
+        color: #333;
+      }
+
+      #container {
+        max-width: 900px;
+        margin: 30px auto;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* ---------- HEADER ---------- */
+      header {
+        background-color: #9b9b93;
+        background-image: url("/HTCNW/Stxx_LeGiaHuy_CNW/img/Tuan2/Bai2/background.png");
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 15px 25px;
+        gap: 15px;
+      }
+
+      header .logo-icon img {
+        width: 55px;
+        height: 55px;
+        object-fit: contain;
+        background-color: #7d7d75;
+        border-radius: 4px;
+        padding: 6px;
+      }
+
+      header .title h1 {
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: bold;
+      }
+
+      header .title p {
+        font-size: 11px;
+        letter-spacing: 2px;
+        margin-top: 3px;
+        color: #eee;
+      }
+
+      /* ---------- NAV (nam trong header theo so do) ---------- */
+      nav {
+        background-color: #b7b7b0;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 10px 20px;
+        color: #444;
+        text-decoration: none;
+        font-size: 13px;
+        text-transform: lowercase;
+      }
+
+      nav ul li a:hover,
+      nav ul li a.active {
+        background-color: #8f8f88;
+        color: #fff;
+      }
+
+      /* ---------- Bo cuc chinh: section + aside ---------- */
+      .main-wrap {
+        display: flex;
+        gap: 25px;
+        padding: 25px;
+      }
+
+      section.content {
+        flex: 2.2;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      article {
+        display: flex;
+        gap: 15px;
+      }
+
+      article img {
+        width: 160px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 3px;
+        flex-shrink: 0;
+      }
+
+      article .article-body h2 {
+        font-size: 17px;
+        color: #333;
+        margin-bottom: 4px;
+      }
+
+      article .article-body .subtitle {
+        color: #e05a6a;
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      article .article-body p {
+        font-size: 13px;
+        line-height: 1.6;
+        color: #555;
+      }
+
+      article figcaption {
+        font-size: 11px;
+        color: #888;
+        margin-top: 4px;
+      }
+
+      /* ---------- ASIDE (ben phai) ---------- */
+      aside {
+        flex: 1;
+        border-left: 1px solid #eee;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+
+      aside section h3 {
+        color: #e05a6a;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      aside .recipes ul {
+        list-style: none;
+      }
+
+      aside .recipes ul li {
+        margin-bottom: 10px;
+      }
+
+      aside .recipes ul li a {
+        color: #e05a6a;
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 1.4;
+      }
+
+      aside .recipes ul li a:hover {
+        text-decoration: underline;
+      }
+
+      aside .contact p {
+        font-size: 13px;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      aside .contact p.company-name {
+        color: #333;
+        font-weight: bold;
+      }
+
+      /* ---------- FOOTER ---------- */
+      footer {
+        background-color: #9b9b93;
+        color: #eee;
+        text-align: center;
+        font-size: 11px;
+        padding: 10px;
+      }
+
+      /* ---------- RESPONSIVE ---------- */
+      @media (max-width: 700px) {
+        .main-wrap {
+          flex-direction: column;
+        }
+        aside {
+          border-left: none;
+          border-top: 1px solid #eee;
+          padding-left: 0;
+          padding-top: 20px;
+        }
+        article {
+          flex-direction: column;
+        }
+        article img {
+          width: 100%;
+          height: 180px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="logo-icon">
+          <img
+            src="/HTCNW/Stxx_LeGiaHuy_CNW/img/Tuan2/Bai2/logo.png"
+            alt="Yoko's Kitchen Logo"
+          />
+        </div>
+        <div class="title">
+          <h1>YOKO'S KITCHEN</h1>
+          <p>JAPANESE COOKING CLASSES</p>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#" class="active">home</a></li>
+            <li><a href="#">classes</a></li>
+            <li><a href="#">catering</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="main-wrap">
+        <section class="content">
+          <article>
+            <figure>
+              <img
+                src="/HTCNW/Stxx_LeGiaHuy_CNW/img/Tuan2/Bai2/vegan.jpg"
+                alt="Japanese Vegetarian"
+              />
+              <figcaption>Vegan</figcaption>
+            </figure>
+            <div class="article-body">
+              <h2>Japanese Vegetarian</h2>
+              <p class="subtitle">Five week course in London</p>
+              <p>
+                A five week introduction to traditional Japanese vegetarian
+                meals, teaching you a selection of rice and noodle dishes.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <figure>
+              <img
+                src="/HTCNW/Stxx_LeGiaHuy_CNW/img/Tuan2/Bai2/teriyaki.jpg"
+                alt="Teriyaki Sauce"
+              />
+              <figcaption>Teriyaki Sauce</figcaption>
+            </figure>
+            <div class="article-body">
+              <h2>Sauces Masterclass</h2>
+              <p class="subtitle">One day workshop</p>
+              <p>
+                An intensive one-day course looking at how to create the most
+                delicious sauces for use in a range of Japanese cookery.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <aside>
+          <section class="recipes">
+            <h3>Popular Recipes</h3>
+            <ul>
+              <li><a href="#">Yakitori (grilled chicken)</a></li>
+              <li><a href="#">Tsukune (minced chicken patties)</a></li>
+              <li><a href="#">Okonomiyaki (savory pancakes)</a></li>
+              <li><a href="#">Mizutaki (chicken stew)</a></li>
+            </ul>
+          </section>
+
+          <section class="contact">
+            <h3>Contact</h3>
+            <p class="company-name">Yoko's Kitchen</p>
+            <p>
+              27 Redchurch Street<br />
+              Shoreditch<br />
+              London E2 7DP
+            </p>
+          </section>
+        </aside>
+      </div>
+
+      <footer>
+        <p>&copy; 2021 Yoko's Kitchen</p>
+      </footer>
+    </div>
+  </body>
+</html>
