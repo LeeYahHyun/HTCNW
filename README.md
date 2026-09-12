@@ -3,4 +3,4 @@
 **git commit -m "nop bai tap"** <br>
 **git push origin main**<br>
 ## upload<br>
-**git clone <tên miền>**
+**git clone + "URL"**
