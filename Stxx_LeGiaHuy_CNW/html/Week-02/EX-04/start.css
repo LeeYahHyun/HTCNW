@@ -1,0 +1,56 @@
+header {
+  text-align: right;
+  border-bottom: 2.5px solid rgb(228, 166, 40);
+}
+header img {
+  width: 40%;
+  height: 150px;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1.5px solid rgb(224, 204, 71);
+  padding-bottom: 20px;
+}
+main nav a {
+  text-decoration: none;
+  border-bottom: 2px dashed rgb(228, 166, 40);
+}
+main nav {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/HTCNW/Stxx_LeGiaHuy_CNW/img/Tuan2/Bai4/back.jpg);
+  width: 40.5%;
+  height: 150%;
+}
+h1,
+h3 {
+  color: rgb(228, 166, 40);
+}
+section {
+  padding-left: 20px;
+}
+section p {
+  color: rgb(174, 20, 20);
+}
+#me-ba {
+  display: flex;
+  flex-direction: row;
+}
+#me-content {
+  width: 90%;
+}
+#me-content span {
+  color: rgb(174, 20, 20);
+}
+#me-h3 {
+  border: 7px solid rgb(228, 166, 40);
+}
+#me-h3 li {
+  color: rgb(174, 20, 20);
+}
+span {
+  color: rgb(174, 20, 20);
+}
+footer {
+}
