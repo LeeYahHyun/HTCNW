@@ -21,7 +21,7 @@ main nav {
   flex-direction: column;
   background-image: url(/HTCNW/Stxx_LeGiaHuy_CNW/img/Tuan2/Bai4/back.jpg);
   width: 40.5%;
-  height: 150%;
+  height: 550px;
 }
 h1,
 h3 {
@@ -52,5 +52,7 @@ section p {
 span {
   color: rgb(174, 20, 20);
 }
-footer {
+footer p {
+  text-align: center;
+  color: rgb(228, 166, 40);
 }
