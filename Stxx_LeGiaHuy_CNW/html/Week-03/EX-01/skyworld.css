@@ -1,0 +1,114 @@
+body {
+  background: linear-gradient(to bottom, rgb(109, 202, 236), rgb(95, 173, 239));
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 3px dashed white;
+}
+header nav {
+  padding-top: 40px;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  padding-left: 50px;
+  font-size: 25px;
+}
+header div {
+  padding-left: 20%;
+}
+header div p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  text-shadow:
+    0 0 4px #0055a5,
+    0 0 8px #0055a5,
+    2px 3px 6px #003f80;
+  color: white;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 9px dashed white;
+}
+section form {
+  display: flex;
+  flex-direction: column;
+}
+section h1,
+p,
+label {
+  color: white;
+}
+section form {
+  padding-left: 50px;
+}
+/* Mỗi div trong form là một hàng */
+section form div {
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+/* Cho tất cả label cùng độ rộng */
+section form div label {
+  width: 190px;
+  flex-shrink: 0;
+}
+
+/* Các ô input */
+section form div input {
+  width: 280px;
+  height: 25px;
+  box-sizing: border-box;
+}
+
+/* Ô nhập nội dung dài */
+section form div textarea {
+  width: 280px;
+  height: 100px;
+  box-sizing: border-box;
+}
+section form div:last-child {
+  display: flex;
+  gap: 10px;
+}
+
+section form div:last-child input {
+  width: 70px;
+  height: 28px;
+  padding: 2px 8px;
+
+  background-color: #eeeeee;
+  border: 1px solid #999;
+  border-radius: 3px;
+
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+}
+aside {
+  padding-left: 20px;
+  padding-right: 50px;
+}
+aside img {
+  width: 95%;
+}
+aside p {
+  color: #003399;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  margin: 0;
+}
+aside p:first-of-type {
+  font-size: 38px;
+}
+
+aside p:last-of-type {
+  font-size: 24px;
+}
+footer {
+  text-align: center;
+}
