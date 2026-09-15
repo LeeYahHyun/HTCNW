@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #e9e9e9;
+  color: #333;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 20px auto;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+/* HEADER */
+.header {
+  background: #35618f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* CHÈN ẢNH LOGO: nếu dùng ảnh thật, thay .logo-icon bằng <img src="logo.png"> */
+.logo-icon {
+  font-size: 34px;
+  color: #7a4fbf;
+}
+
+.logo-text h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.logo-text p {
+  font-size: 13px;
+  font-style: italic;
+  color: #dce6f0;
+}
+
+.search-box input {
+  padding: 6px 8px;
+  border: none;
+  border-radius: 2px;
+  width: 200px;
+}
+
+.search-box button {
+  padding: 6px 12px;
+  border: none;
+  background: #ddd;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+/* NAV */
+.navbar {
+  background: #4a7aab;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar li {
+  flex: 1;
+  text-align: center;
+  border-left: 1px solid #5f8cba;
+}
+
+.navbar li:first-child {
+  border-left: none;
+}
+
+.navbar a {
+  display: block;
+  padding: 14px 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navbar li.active a,
+.navbar a:hover {
+  background: #35618f;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 0.9fr;
+  gap: 25px;
+  padding: 25px;
+}
+
+.contact-form h2,
+.info-box h2,
+.promo-box h2 {
+  font-size: 20px;
+  font-weight: normal;
+  border-bottom: 1px dotted #999;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.intro-text {
+  font-style: italic;
+  color: #c0392b;
+  font-size: 13px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group textarea {
+  border: 1px solid #ccc;
+  padding: 6px;
+  font-family: inherit;
+}
+
+.form-group.full {
+  margin-bottom: 15px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-submit,
+.btn-reset {
+  padding: 6px 18px;
+  border: 1px solid #999;
+  background: #f0f0f0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* INFO BOX */
+.info-box p {
+  font-size: 13px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* PROMO BOX */
+.promo-box {
+  background: #f7f7f7;
+  padding: 15px;
+}
+
+/* CHÈN ẢNH KHUYẾN MÃI: thay src="rose.jpg" trong index.html bằng ảnh hoa hồng thật */
+.promo-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+}
+
+.promo-box p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  font-size: 13px;
+  color: #35618f;
+  text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+  background: #2c4a6e;
+  color: #cdd9e5;
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+}
+
+.footer a {
+  color: #cdd9e5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

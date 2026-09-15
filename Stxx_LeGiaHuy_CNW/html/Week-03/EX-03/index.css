@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #e5e5e5;
+  color: #444;
+}
+
+.wrapper {
+  max-width: 780px;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+/* HEADER */
+.header {
+  position: relative;
+  background: linear-gradient(180deg, #b5651d 0%, #8b4513 100%);
+  padding: 18px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.header .corner {
+  position: absolute;
+  top: 0;
+  width: 70px;
+  height: auto;
+  pointer-events: none;
+}
+
+.header .corner-tl {
+  left: 0;
+}
+
+.header .corner-tr {
+  right: 0;
+  transform: scaleX(-1);
+}
+
+.header h1 {
+  font-size: 34px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  /* giả lập texture lá bằng gradient chữ, thay bằng ảnh nếu cần độ chính xác cao */
+  background: linear-gradient(180deg, #f4d35e 0%, #c17f2a 50%, #7a4a12 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* NAV */
+.navbar {
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar a {
+  display: block;
+  padding: 12px 18px;
+  color: #a0522d;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* BANNER */
+.banner {
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  background: #d9c9a3;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 30px;
+  padding: 30px 25px;
+}
+
+/* SIGNUP SECTION */
+.signup h2 {
+  font-size: 20px;
+  color: #8a7415;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.intro-text {
+  font-style: italic;
+  font-weight: bold;
+  color: #4a7a6f;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  max-width: 440px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+  max-width: 420px;
+}
+
+.form-group input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 4px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #555;
+  background: transparent;
+}
+
+.form-group input::placeholder {
+  color: #aaa;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-bottom: 1px solid #8a8a1e;
+}
+
+.btn-signup {
+  margin-top: 10px;
+  background: #8a8a1e;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-signup:hover {
+  background: #75740f;
+}
+
+/* SIDEBAR */
+.sidebar h3 {
+  font-size: 18px;
+  color: #5a3a1a;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.links-box {
+  background: #f5dfc0;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+}
+
+.links-box ul {
+  list-style: none;
+}
+
+.links-box li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+
+.links-box li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 6px;
+  height: 6px;
+  background: #b5651d;
+}
+
+.links-box a {
+  color: #c0703f;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.links-box a:hover {
+  text-decoration: underline;
+}
+
+.more-info {
+  overflow: hidden;
+}
+
+.more-info .thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  float: left;
+  margin: 0 12px 8px 0;
+  border: 1px solid #ddd;
+}
+
+.more-info p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* FOOTER */
+.footer {
+  background: #4a2e17;
+  padding: 0 0 16px 0;
+  text-align: center;
+}
+
+.footer-strip {
+  width: 100%;
+  height: 30px;
+  object-fit: cover;
+  display: block;
+}
+
+.footer-content {
+  position: relative;
+  padding: 16px 90px;
+}
+
+.footer-content .corner {
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: auto;
+  pointer-events: none;
+}
+
+.footer-content .corner-bl {
+  left: 0;
+}
+
+.footer-content .corner-br {
+  right: 0;
+  transform: scaleX(-1);
+}
+
+.footer p {
+  color: #f2e9dc;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+  }
+}
