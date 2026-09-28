@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magazine Template</title>
+    <link
+      rel="stylesheet"
+      href="/HTCNW/Stxx_LeGiaHuy_CNW/html/css-bootstrap/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/HTCNW/Stxx_LeGiaHuy_CNW/html/css-bootstrap/bootstrap-grid.min.css"
+    />
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        margin: 0;
+      }
+
+      /* ===== NAVBAR ===== */
+      .navbar-dark {
+        background-color: #16374a;
+        padding: 15px 30px;
+      }
+      .navbar-dark .navbar-brand {
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        font-size: 15px;
+      }
+      .navbar-dark .nav-link {
+        color: rgba(255, 255, 255, 0.85);
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .navbar-dark .nav-link.disabled {
+        color: rgba(255, 255, 255, 0.4);
+      }
+      .navbar-dark .nav-link:hover {
+        color: #fff;
+      }
+      .btn-download {
+        background-color: #2196f3;
+        color: #fff;
+        border: none;
+        font-weight: 600;
+        padding: 8px 18px;
+      }
+
+      /* ===== HERO SECTION ===== */
+      .hero-section {
+        background: linear-gradient(120deg, #e8a9e0 0%, #a9c6f0 100%);
+        padding: 0;
+      }
+      .hero-image img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        display: block;
+      }
+      .hero-content {
+        padding: 60px 60px 60px 50px;
+      }
+      .hero-content h1 {
+        font-family: "Courier New", monospace;
+        font-weight: 700;
+        letter-spacing: 6px;
+        font-size: 44px;
+        color: #1a1a1a;
+        margin-bottom: 25px;
+      }
+      .hero-content p {
+        font-family: "Courier New", monospace;
+        font-size: 18px;
+        color: #1a1a1a;
+        margin-bottom: 35px;
+      }
+      .btn-order {
+        background-color: transparent;
+        border: 2px solid #1a1a1a;
+        border-radius: 30px;
+        color: #1a1a1a;
+        font-family: "Courier New", monospace;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 12px 30px;
+      }
+      .btn-order:hover {
+        background-color: #1a1a1a;
+        color: #fff;
+      }
+
+      /* ===== OCTOBER HIGHLIGHTS SECTION ===== */
+      .highlights-section {
+        background: url("img/road-bg.jpg") center center / cover no-repeat;
+        min-height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 20px;
+      }
+      .highlights-section h2 {
+        color: #fff;
+        font-family: "Courier New", monospace;
+        font-weight: 700;
+        letter-spacing: 4px;
+        font-size: 48px;
+        text-align: center;
+        margin: 0;
+      }
+      .highlight-section {
+        background-image: url("duong-dan-anh-duong-nhua.jpg");
+        background-size: cover; /* ảnh phủ kín toàn bộ khung */
+        background-position: center; /* căn giữa ảnh */
+        background-repeat: no-repeat;
+        min-height: 400px; /* chiều cao tối thiểu để thấy rõ ảnh nền */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar navbar-dark">
+      <div class="container-fluid">
+        <div class="row w-100 align-items-center">
+          <div class="col-3">
+            <a class="navbar-brand" href="#">MAGAZINE TEMPLATE</a>
+          </div>
+          <div class="col-4">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOCK DEMOS 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOCK DEMOS 2</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">SITE TEMPLATES 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SITE TEMPLATES 2</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-2 text-end">
+            <button class="btn btn-download" type="button">
+              DOWNLOAD NOW!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="hero-section">
+      <div class="row g-0 align-items-center">
+        <div class="col-6 hero-image">
+          <img
+            src="/HTCNW/Stxx_LeGiaHuy_CNW/img/Tuan5/Bai1/images-10.jpg"
+            alt="Magazines"
+          />
+        </div>
+        <div class="col-6 hero-content">
+          <h1>AUTUMN SALE</h1>
+          <p>Purchase summer issues! 50% OFF</p>
+          <button class="btn btn-order" type="button">ORDER NOW</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- OCTOBER HIGHLIGHTS SECTION -->
+    <section class="highlight-section text-center py-5">
+      <h1 class="text-white fw-bold">OCTOBER HIGHLIGHTS</h1>
+    </section>
+
+    <script src="/HTCNW/Stxx_LeGiaHuy_CNW/js/js-bootstap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

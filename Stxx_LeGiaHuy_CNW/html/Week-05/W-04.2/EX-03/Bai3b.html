@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="/HTCNW/Stxx_LeGiaHuy_CNW/html/css-bootstrap/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="cotainer border p-3 mt-4">
+      <button
+        class="btn btn-secondary"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#infoModal"
+      >
+        <span>Dang Nhap / Dang Ki</span>
+      </button>
+      <div class="modal fade" id="infoModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-ỉtem" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="dangKi-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#dangKi"
+                    role="tab"
+                    type="button"
+                  >
+                    Dang Ki
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="dangNhap-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#dangNhap"
+                    role="tab"
+                    type="button"
+                  >
+                    Dang Nhap
+                  </button>
+                </li>
+              </ul>
+              <button
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="X"
+                type="button"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="tab-content pt-3">
+                <div
+                  class="tab-pane fade show active"
+                  id="dangKi"
+                  role="tabpanel"
+                  aria-labelledby="dangKi-tab"
+                >
+                  <div class="carousel slide" id="dangKiCarousel">
+                    <form action="submit">
+                      <div class="row pb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Ho ten"
+                        />
+                      </div>
+                      <div class="row pb-3">
+                        <div class="col-6">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="So dien thoai"
+                          />
+                        </div>
+                        <div class="col-6">
+                          <select name="gender" id="gender" class="form-select">
+                            <option value="male">Male</option>
+                            <option value="feMale">Female</option>
+                            <option value="other">Other</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row pb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Email"
+                        />
+                      </div>
+                      <div class="row pb-3">
+                        <div class="col-6">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Mat khau"
+                          />
+                        </div>
+                        <div class="col-6">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Xac nhan mat khau"
+                          />
+                        </div>
+                      </div>
+                      <div class="row pb-3">
+                        <div class="col-6">
+                          <select name="city" id="city" class="form-select">
+                            <option value="" disabled selected hidden>
+                              Chon thanh pho
+                            </option>
+                            <option value="hcm">TP. HCM</option>
+                            <option value="daNang">Tp. Da Nang</option>
+                            <option value="tuyHoa">TP. Tuy Hoa</option>
+                            <option value="haNoi">Ha Noi</option>
+                          </select>
+                        </div>
+                        <div class="col-6">
+                          <select name="quan" id="quan" class="form-select">
+                            <option value="" disabled selected hidden>
+                              Quan
+                            </option>
+                            <option value="q12">Q12</option>
+                            <option value="qthuduc">Quan Thủ Đức</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row pb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Dia chi"
+                        />
+                      </div>
+                      <div class="row pb-3">
+                        <input type="date" class="form-control" />
+                      </div>
+                      <div class="row pb-3">
+                        <div class="col-6">
+                          <img
+                            src="/HTCNW/Stxx_LeGiaHuy_CNW/img/Tuan4/Bai3/Screenshot 2026-09-27 154726.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-6">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhap ma captcha"
+                          />
+                        </div>
+                      </div>
+                      <div class="row pb-3">
+                        <span
+                          >Toi da doc va dong y voi
+                          <a style="color: orange; text-decoration: none"
+                            >CHINH SACH</a
+                          >
+                          cua chuong trinh</span
+                        >
+                      </div>
+                      <div class="row pb-3">
+                        <button class="btn btn-warning" type="submit">
+                          Dang Ky
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="dangNhap"
+                  role="tabpanel"
+                  aria-labelledby="dangNhap-tab"
+                >
+                  <p class="pt-2">
+                    Vui lòng đăng nhập trước khi mua vé để tích lũy điểm, cơ hội
+                    nhận thêm nhiều ưu đãi từ chương trình thành viên Galaxy
+                    Cinema.
+                  </p>
+                  <form action="submit">
+                    <div class="row pb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="row pb-2">
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Mat khau"
+                      />
+                    </div>
+                    <div class="row pb-3">
+                      <a href="#" class="text-decoration-none"
+                        >Quen mat khau?</a
+                      >
+                    </div>
+                    <div class="row pb-3">
+                      <button class="btn btn-warning" type="submit">
+                        Dang Nhap
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/HTCNW/Stxx_LeGiaHuy_CNW/js/js-bootstap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
